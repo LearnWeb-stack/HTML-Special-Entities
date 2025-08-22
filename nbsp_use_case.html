@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-breaking Space Clear Example</title>
+</head>
+<body>
+    <h1>&amp;nbsp; Example - Keep Words Together</h1>
+    
+    <p><strong>Problem:</strong> Sometimes words that should stay together get split across lines and look bad.</p>
+    
+    <h2>Example: Name Getting Split</h2>
+    
+    <h3>❌ BAD - Without &amp;nbsp;</h3>
+    <div style="width: 120px; border: 2px solid red; padding: 10px; background: #ffe6e6;">
+        <p>Call Dr. John Smith right now!</p>
+    </div>
+    <p><em>Notice how "Dr." and "John" might end up on different lines? That looks unprofessional!</em></p>
+    
+    <h3>✅ GOOD - With &amp;nbsp;</h3>
+    <div style="width: 120px; border: 2px solid green; padding: 10px; background: #e6ffe6;">
+        <p>Call Dr.&nbsp;John&nbsp;Smith right now!</p>
+    </div>
+    <p><em>Now "Dr. John Smith" stays together as one unit!</em></p>
+    
+    <hr>
+    
+    <h2>Example: Price Getting Split</h2>
+    
+    <h3>❌ BAD - Without &amp;nbsp;</h3>
+    <div style="width: 100px; border: 2px solid red; padding: 10px; background: #ffe6e6;">
+        <p>Price: $50 USD</p>
+    </div>
+    <p><em>The "$50" and "USD" might get separated!</em></p>
+    
+    <h3>✅ GOOD - With &amp;nbsp;</h3>
+    <div style="width: 100px; border: 2px solid green; padding: 10px; background: #e6ffe6;">
+        <p>Price: $50&nbsp;USD</p>
+    </div>
+    <p><em>Now "$50 USD" stays together!</em></p>
+    
+    <hr>
+    
+    <h2>What &amp;nbsp; Does</h2>
+    <ul>
+        <li><strong>&amp;nbsp;</strong> = "non-breaking space"</li>
+        <li>It's like a regular space, but it prevents line breaks</li>
+        <li>Use it between words that should ALWAYS stay on the same line</li>
+    </ul>
+    
+    <h2>When to Use It</h2>
+    <ul>
+        <li>Names: Dr.&nbsp;Smith</li>
+        <li>Prices: $25&nbsp;USD</li>
+        <li>Measurements: 5&nbsp;miles</li>
+        <li>Phone: (555)&nbsp;123-4567</li>
+    </ul>
+    
+    <h2>Try Resizing Your Browser</h2>
+    <p>Make your browser window very narrow and see how the examples above behave differently!</p>
+</body>
+</html>
